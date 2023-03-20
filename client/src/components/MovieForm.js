@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import styled from "styled-components";
 
@@ -22,9 +23,7 @@ function MovieForm() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((newMovie) => console.log(newMovie));
+    }).then((response) => console.log(response));
   }
 
   function handleChange(e) {
